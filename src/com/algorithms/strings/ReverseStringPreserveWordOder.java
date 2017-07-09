@@ -33,6 +33,8 @@ public class ReverseStringPreserveWordOder {
         System.out.println(output);
     }
     /*
-        output : yaS olleH oT eht dlroW
+        Assumption: each word is separated with single space
+        input : Say Hello To The World
+        output : yaS olleH oT ehT dlroW
      */
 }
