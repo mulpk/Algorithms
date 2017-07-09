@@ -19,6 +19,10 @@ public class RotateRight_K_Elements {
     */
 
     public int[] rotateArrayRightByK(int[] input, int k) {
+        if(input.length < 2)
+            return input;
+        if(k > input.length)
+            k = k % input.length;
         swap(input,0,input.length-1);
         swap(input,0,k-1);
         swap(input,k,input.length-1);
@@ -36,7 +40,7 @@ public class RotateRight_K_Elements {
 
     public static void main(String[] args) {
         int[] input = {1,2,3,4,5,6,7,8,9,10};
-        int k = 4;
+        int k = 14;
         RotateRight_K_Elements util = new RotateRight_K_Elements();
         int[] output = util.rotateArrayRightByK(input, k);
         System.out.println(Utils.printArray(output));
