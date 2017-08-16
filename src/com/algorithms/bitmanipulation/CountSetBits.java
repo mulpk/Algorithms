@@ -16,5 +16,8 @@ public class CountSetBits {
         System.out.println(countOnes(1023));
         System.out.println(countOnes(127));
 
+        //alternate solution if you want to use java api
+        System.out.println(Integer.bitCount(1023));
+
     }
 }
